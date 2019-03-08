@@ -1,25 +1,12 @@
-<h1>Aula</h1>
-
-<p>Aula introdutória</p>
-<p>Boa noite, {{ nome}} </p>
-
-
-<form>
-  <input type="text" name="campo" value="" [(ngModel)]="campo">
-  <button type="button" name="b1" (click)=inserir()>1</button>
-  <button type="button" name="b2" (click)=inserir()>2</button>
-  <button type="button" name="b3" (click)=inserir()>3</button>
-    </br>
-  <button type="button" name="b4" (click)=inserir()>4</button>
-  <button type="button" name="b5" (click)=inserir()>5</button>
-  <button type="button" name="b6" (click)=inserir()>6</button>
-      </br>
-  <button type="button" name="b7" (click)=inserir()>7</button>
-  <button type="button" name="b8" (click)=inserir()>8</button>
-  <button type="button" name="b9" (click)=inserir()>9</button>
-</br>
-<button type="button" name="soma" (click)=somar(valor1, valor2)>+</button>
-<button type="button" name="subtracao" (click)=subtracao(valor1, valor2)>-</button>
-<button type="button" name="multiplica" (click)=metodoClique(valor1, valor2)>*</button>
-<button type="button" name="divisao" (click)=metodoClique(valor1, valor2)>/</button>
-</form>
+<div class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-md bg-info">
+      <a routerLink="" class="nav-link text-white">home</a>
+      <a routerLink="calculadora" class="nav-link text-white">Calculadora</a>
+      <a routerLink="positivoNegativo" class="nav-link text-white">Positivo/Negativo</a>
+      <a routerLink="imc" class="nav-link text-white">IMC</a>
+      <a routerLink="" class="nav-link text-white">Cadastro Pessoa</a>
+    </nav>
+  </header>
+</div>
+<router-outlet></router-outlet>
