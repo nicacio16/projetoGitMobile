@@ -8,5 +8,29 @@
       <a routerLink="" class="nav-link text-white">Cadastro Pessoa</a>
     </nav>
   </header>
+
+
+  <form>
+      <input type="text" name="nome" [(ngModel)]="estado.nome">
+      <input type="text" name="sigla" [(ngModel)]="estado.sigla">
+      <br/>
+      <button type="button" name="adicionar" (click)="adicionar()">Cadastrar</button>
+  </form>
+
+
+  <br>
+  <br>
+
+  <div class="">
+    <table>
+      <tr *ngFor="let est of listaEstado; let i = index">
+        <td>{{ est.nome }}</td>
+        <td>{{ est.sigla }}</td>
+        <td><button name="button1" (click)="excluir(i)" >Excluir</button></td>
+        <td><button name="button2" (click)="alterar(i)" >Alterar</button></td>
+      </tr>
+    </table>
+
+  </div>
 </div>
 <router-outlet></router-outlet>

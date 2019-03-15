@@ -1,0 +1,23 @@
+<form>
+    <input type="text" name="nome" [(ngModel)]="categoria.nome">
+    <input type="text" name="descricao" [(ngModel)]="categoria.descricao">
+    <br/>
+    <button type="button" name="adicionar" (click)="adicionar()">Cadastrar</button>
+</form>
+
+
+<br>
+<br>
+
+<div class="">
+  <table>
+    <tr *ngFor="let cat of listaCategoria; let i = index">
+      <td>{{ cat.nome }}</td>
+      <td>{{ cat.descricao }}</td>
+      <td><button name="button1" (click)="excluir(i)" >Excluir</button></td>
+      <td><button name="button2" (click)="alterar(i)" >Alterar</button></td>
+    </tr>
+  </table>
+
+</div>
+</div>

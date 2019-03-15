@@ -8,21 +8,27 @@ import { HomeComponent } from './paginas/home/home.component';
 import { CalculadoraComponent } from './paginas/calculadora/calculadora.component';
 import { PositivoNegativoComponent } from './paginas/positivoNegativo/positivoNegativo.component';
 import { ImcComponent } from './paginas/imc/imc.component';
+import { CategoriaComponent } from './paginas/categoria/categoria.component';
 
+
+//define quais componentes serão utilizados
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CalculadoraComponent,
     PositivoNegativoComponent,
-    ImcComponent
+    ImcComponent,
+    CategoriaComponent
   ],
+  //define os modulos ou conjunto de componentes que serão utilizados
   imports: [
     BrowserModule,
-    FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
+  //define qual será a página principal - AppComponent
   bootstrap: [AppComponent]
 })
 export class AppModule { }
